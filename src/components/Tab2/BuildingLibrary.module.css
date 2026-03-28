@@ -1,0 +1,181 @@
+.panel {
+    display: flex;
+    flex-direction: column;
+    width: var(--right-panel-width);
+    min-width: 240px;
+    background: var(--color-surface);
+    border-left: 1px solid var(--color-border);
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 1px solid var(--color-border);
+    flex-shrink: 0;
+}
+
+.tab {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    padding: 12px var(--space-3);
+    font-size: var(--text-sm);
+    font-weight: var(--weight-medium);
+    color: var(--color-text-muted);
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition:
+        color var(--transition-fast),
+        border-color var(--transition-fast);
+    font-family: var(--font-sans);
+}
+
+.tab:hover {
+    color: var(--color-text);
+}
+
+.activeTab {
+    color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
+}
+
+.badge {
+    font-size: var(--text-xs);
+    background: var(--color-accent-light);
+    color: var(--color-accent);
+    padding: 1px 7px;
+    border-radius: var(--radius-full);
+    font-weight: var(--weight-semi);
+}
+
+.body {
+    flex: 1;
+    overflow-y: auto;
+    padding: var(--space-3);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-10) var(--space-4);
+    gap: var(--space-2);
+    color: var(--color-text-muted);
+    font-size: var(--text-sm);
+    text-align: center;
+    line-height: 1.6;
+}
+
+.emptyIcon {
+    font-size: 2rem;
+    margin-bottom: var(--space-2);
+}
+
+/* ── Room Card ─────────────────────────────────────────────── */
+.roomCard {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-3);
+    background: var(--color-surface-2);
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-md);
+    transition:
+        border-color var(--transition-fast),
+        opacity var(--transition-fast);
+}
+
+.roomCard:hover {
+    border-color: var(--color-accent);
+}
+
+.roomCardDisabled {
+    opacity: 0.65;
+}
+
+.roomInfo {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.roomHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-2);
+}
+
+.roomName {
+    font-size: var(--text-sm);
+    font-weight: var(--weight-semi);
+    color: var(--color-text);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+}
+
+.enableCheckbox {
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    accent-color: var(--color-accent);
+    flex-shrink: 0;
+}
+
+.roomMeta {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    font-family: var(--font-mono);
+}
+
+/* ── Building Card ─────────────────────────────────────────── */
+.buildingCard {
+    padding: var(--space-3);
+    background: var(--color-surface-2);
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    transition: border-color var(--transition-fast);
+}
+
+.buildingCard:hover {
+    border-color: var(--color-accent);
+}
+
+.buildingInfo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.buildingName {
+    font-size: var(--text-sm);
+    font-weight: var(--weight-semi);
+    color: var(--color-text);
+}
+
+.buildingMeta {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    font-family: var(--font-mono);
+}
+
+.buildingActions {
+    display: flex;
+    gap: var(--space-1);
+}

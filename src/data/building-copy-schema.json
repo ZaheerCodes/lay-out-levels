@@ -1,0 +1,71 @@
+{
+    "title": "Cleaned Building For Unity",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "The display name of the level."
+        },
+        "rooms": {
+            "type": "object",
+            "description": "A dictionary/map of room instances placed in the level, keyed by their id.",
+            "additionalProperties": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "Unique identifier for this specific placement of the room."
+                    },
+                    "gridX": {
+                        "type": "integer",
+                        "description": "The X coordinate of the room's origin on the grid."
+                    },
+                    "gridY": {
+                        "type": "integer",
+                        "description": "The Y coordinate of the room's origin on the grid."
+                    },
+                    "matrix": {
+                        "type": "array",
+                        "description": "A 2D array representing the room's physical footprint.",
+                        "items": {
+                            "type": "array",
+                            "items": {
+                                "type": "integer"
+                            }
+                        }
+                    }
+                },
+                "required": ["id", "gridX", "gridY", "matrix"]
+            }
+        },
+        "doors": {
+            "type": "array",
+            "description": "A list of physical connections/doors between rooms.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "gridX": {
+                        "type": "number",
+                        "description": "The X coordinate of the door. (Can be a half-step float e.g., 11.5)."
+                    },
+                    "gridY": {
+                        "type": "number",
+                        "description": "The Y coordinate of the door. (Can be a half-step float e.g., 17.5)."
+                    },
+                    "alignment": {
+                        "type": "string",
+                        "description": "The physical orientation of the door.",
+                        "enum": [
+                            "horizontal",
+                            "vertical",
+                            "diagonal-forward",
+                            "diagonal-backward"
+                        ]
+                    }
+                },
+                "required": ["gridX", "gridY", "alignment"]
+            }
+        }
+    },
+    "required": ["name", "rooms", "doors"]
+}

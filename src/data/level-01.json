@@ -1,0 +1,230 @@
+{
+    "name": "New Building",
+    "rooms": {
+        "instance_1": {
+            "id": "instance_1",
+            "gridX": 13,
+            "gridY": 12,
+            "matrix": [
+                [2, 1, 2],
+                [1, 1, 1],
+                [2, 1, 1]
+            ]
+        },
+        "instance_2": {
+            "id": "instance_2",
+            "gridX": 14,
+            "gridY": 10,
+            "matrix": [
+                [1, 1, 1],
+                [1, 1, 1],
+                [0, 2, 1]
+            ]
+        },
+        "instance_3": {
+            "id": "instance_3",
+            "gridX": 12,
+            "gridY": 10,
+            "matrix": [
+                [1, 1],
+                [1, 1],
+                [1, 2]
+            ]
+        },
+        "instance_4": {
+            "id": "instance_4",
+            "gridX": 11,
+            "gridY": 14,
+            "matrix": [
+                [1, 1, 2],
+                [1, 1, 1],
+                [1, 1, 2]
+            ]
+        },
+        "instance_5": {
+            "id": "instance_5",
+            "gridX": 11,
+            "gridY": 11,
+            "matrix": [
+                [1, 0],
+                [1, 0],
+                [1, 1]
+            ]
+        },
+        "instance_6": {
+            "id": "instance_6",
+            "gridX": 13,
+            "gridY": 15,
+            "matrix": [
+                [0, 1, 1],
+                [2, 1, 1],
+                [1, 1, 1]
+            ]
+        },
+        "instance_7": {
+            "id": "instance_7",
+            "gridX": 16,
+            "gridY": 13,
+            "matrix": [[1], [1], [1]]
+        },
+        "instance_8": {
+            "id": "instance_8",
+            "gridX": 10,
+            "gridY": 15,
+            "matrix": [
+                [1, 0, 0],
+                [1, 0, 0],
+                [1, 1, 1]
+            ]
+        },
+        "instance_9": {
+            "id": "instance_9",
+            "gridX": 10,
+            "gridY": 12,
+            "matrix": [[1], [1], [1]]
+        },
+        "instance_10": {
+            "id": "instance_10",
+            "gridX": 16,
+            "gridY": 16,
+            "matrix": [
+                [1, 1],
+                [1, 1],
+                [1, 1]
+            ]
+        },
+        "instance_11": {
+            "id": "instance_11",
+            "gridX": 10,
+            "gridY": 10,
+            "matrix": [
+                [1, 1],
+                [1, 0]
+            ]
+        },
+        "instance_12": {
+            "id": "instance_12",
+            "gridX": 17,
+            "gridY": 13,
+            "matrix": [
+                [1, 1],
+                [1, 1],
+                [1, 1]
+            ]
+        },
+        "instance_13": {
+            "id": "instance_13",
+            "gridX": 17,
+            "gridY": 11,
+            "matrix": [[1], [1]]
+        },
+        "instance_14": {
+            "id": "instance_14",
+            "gridX": 14,
+            "gridY": 18,
+            "matrix": [[1, 1]]
+        },
+        "instance_15": {
+            "id": "instance_15",
+            "gridX": 17,
+            "gridY": 10,
+            "matrix": [
+                [1, 1],
+                [0, 1],
+                [0, 1]
+            ]
+        }
+    },
+    "doors": [
+        {
+            "gridX": 11.5,
+            "gridY": 17,
+            "alignment": "horizontal"
+        },
+        {
+            "gridX": 12,
+            "gridY": 12.5,
+            "alignment": "vertical"
+        },
+        {
+            "gridX": 17,
+            "gridY": 13.5,
+            "alignment": "vertical"
+        },
+        {
+            "gridX": 13,
+            "gridY": 17.5,
+            "alignment": "vertical"
+        },
+        {
+            "gridX": 11,
+            "gridY": 14.5,
+            "alignment": "vertical"
+        },
+        {
+            "gridX": 16,
+            "gridY": 13.5,
+            "alignment": "vertical"
+        },
+        {
+            "gridX": 16.5,
+            "gridY": 16,
+            "alignment": "horizontal"
+        },
+        {
+            "gridX": 17.5,
+            "gridY": 11,
+            "alignment": "horizontal"
+        },
+        {
+            "gridX": 14,
+            "gridY": 11.5,
+            "alignment": "vertical"
+        },
+        {
+            "gridX": 14.5,
+            "gridY": 18,
+            "alignment": "horizontal"
+        },
+        {
+            "gridX": 16,
+            "gridY": 16.5,
+            "alignment": "vertical"
+        },
+        {
+            "gridX": 15.5,
+            "gridY": 12.5,
+            "alignment": "diagonal-backward"
+        },
+        {
+            "gridX": 17.5,
+            "gridY": 13,
+            "alignment": "horizontal"
+        },
+        {
+            "gridX": 10.5,
+            "gridY": 12,
+            "alignment": "horizontal"
+        },
+        {
+            "gridX": 10.5,
+            "gridY": 15,
+            "alignment": "horizontal"
+        },
+        {
+            "gridX": 12,
+            "gridY": 10.5,
+            "alignment": "vertical"
+        },
+        {
+            "gridX": 13.5,
+            "gridY": 14.5,
+            "alignment": "diagonal-backward"
+        },
+        {
+            "gridX": 14.5,
+            "gridY": 15,
+            "alignment": "horizontal"
+        }
+    ]
+}
