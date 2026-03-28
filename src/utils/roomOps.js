@@ -1,3 +1,5 @@
+import { generateVariants, serializeMatrix } from "./matrixOps";
+
 export const isDuplicateRoom = (newRoom, existingRooms) => {
     const variants = generateVariants(newRoom);
     const variantStrings = new Set(variants.map(serializeMatrix));
